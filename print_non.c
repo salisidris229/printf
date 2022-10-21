@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * print_bigS - Non printable characters
+ * print_bigS - Non printable characters that can not be printed
  * (0 < ASCII value < 32 or >= 127) are
- * printed this way: \x, followed by the ASCII code
+ * printed this way: \x, followed by the ASCII code case
  * value in hexadecimal (upper case - always 2 characters)
  * @l: va_list arguments from _printf
  * @f: pointer to the struct flags that determines
- * if a flag is passed to _printf
- * Return: number of char printed
+ * if a flag is passed to _printf and if it is not
+ * Return: number of char printed as a value
  */
 int print_bigS(va_list l, flags_t *f)
 {
@@ -38,11 +38,11 @@ int print_bigS(va_list l, flags_t *f)
 }
 
 /**
- * print_rev - prints a string in reverse
- * @l: argument from _printf
+ * print_rev - prints a string in reverse but could be forward too
+ * @l: argument from _printf is cool
  * @f: pointer to the struct flags that determines
- * if a flag is passed to _printf
- * Return: length of the printed string
+ * if a flag is passed to _printf and it would also
+ * Return: length of the printed string as void, numeric or as a string
  */
 int print_rev(va_list l, flags_t *f)
 {
