@@ -2,13 +2,13 @@
 
 /**
  * get_print - selects the right printing function
- * depending on the conversion specifier passed to _printf
- * @s: character that holds the conversion specifier
- * Description: the function loops through the structs array
+ * depending on the conversion specifier passed to _printf or not
+ * @s: character that holds the conversion specifier in mutable format
+ * Description: the function loops through the structs array when printf is passed
  * func_arr[] to find a match between the specifier passed to _printf
  * and the first element of the struct, and then the approriate
- * printing function
- * Return: a pointer to the matching printing function
+ * printing function on command code base
+ * Return: a pointer to the matching printing function as zero or one
  */
 int (*get_print(char s))(va_list, flags_t *)
 {
