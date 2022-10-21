@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-* _printf - printf function
-* @format: const char pointer
-* Return: b_len
+* _printf - printf function form entry point of all functions
+* @format: const char pointer to printf
+* Return: b_len as a value
 */
 int _printf(const char *format, ...)
 {
