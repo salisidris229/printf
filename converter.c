@@ -2,10 +2,10 @@
 
 /**
  * convert - converts number and base into string
- * @num: input number
- * @base: input base
- * @lowercase: flag if hexa values need to be lowercase
- * Return: result string
+ * @num: input number system
+ * @base: input base system
+ * @lowercase: flag if hexa values need to be in the lowercase
+ * Return: result string that would be returned
  */
 char *convert(unsigned long int num, int base, int lowercase)
 {
