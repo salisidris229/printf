@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * convert - converts number and base into string
+ * convert - converts number and base into string based system
  * @num: input number system
  * @base: input base system
  * @lowercase: flag if hexa values need to be in the lowercase
