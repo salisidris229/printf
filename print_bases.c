@@ -2,13 +2,13 @@
 
 /**
  * print_hex - prints a number in hexadecimal base,
- * in lowercase
- * @l: va_list arguments from _printf
+ * in lowercase and not uppercase
+ * @l: va_list arguments from _printf on 32bit and 64bit
  * @f: pointer to the struct flags that determines
- * if a flag is passed to _printf
+ * if a flag is passed to _printf and allocates appropraite mem on run
  * Description: the function calls convert() which in turns converts the input
- * number into the correct base and returns it as a string
- * Return: the number of char printed
+ * number into the correct base and returns it as a string with char12 in ASCII format
+ * Return: the number of char printed as a value
  */
 int print_hex(va_list l, flags_t *f)
 {
@@ -24,13 +24,13 @@ int print_hex(va_list l, flags_t *f)
 
 /**
  * print_hex_big - prints a number in hexadecimal base,
- * in uppercase
- * @l: va_list arguments from _printf
+ * in uppercase but won't in lowercase
+ * @l: va_list arguments from _printf on user call
  * @f: pointer to the struct that determines
- * if a flag is passed to _printf
+ * if a flag is passed to _printf and throw error on null
  * Description: the function calls convert() which in turns converts the input
  * number into the correct base and returns it as a string
- * Return: the number of char printed
+ * Return: the number of char printed as a value of char printed
  */
 int print_hex_big(va_list l, flags_t *f)
 {
