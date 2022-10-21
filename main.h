@@ -4,11 +4,11 @@
 #include <stdlib.h>
 #include <stdarg.h>
 /**
-* struct flags - struct containing flags to "turn on"
+* struct flags - struct containing flags to "turn on" or off
 * when a flag specifier is passed to _printf()
-* @plus: flag for the '+' character
-* @space: flag for the ' ' character
-* @hash: flag for the '#' character
+* @plus: flag for the '+' character with char0 on memory
+* @space: flag for the ' ' character on getChar
+* @hash: flag for the '#' character 16bit alloc memo
 */
 typedef struct flags
 {
