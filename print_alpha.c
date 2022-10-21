@@ -2,11 +2,11 @@
 
 /**
  * print_string - loops through a string and prints
- * every character
- * @l: va_list arguments from _printf
+ * every character on new lines at each iteration
+ * @l: va_list arguments from _printf on pointer to l
  * @f: pointer to the struct flags that determines
- * if a flag is passed to _printf
- * Return: number of char printed
+ * if a flag is passed to _printf on 64bit memo allocation
+ * Return: number of char printed on each run of func
  */
 int print_string(va_list l, flags_t *f)
 {
